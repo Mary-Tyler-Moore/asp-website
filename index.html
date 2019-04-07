@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="discrption" content="Fabon Personal Portfolio Template">
+    <meta name="keyword" content="Statesboro, Smoke, Vape, Cigars, Tobacco, Hooka, CBD, Georgia.">
+    <meta name="author" content="A Smokin' Place">
+    <!-- Title -->
+    <title>A Smokin' Place - Statesboro, GA</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+
+    <script>
+
+        if (navigator.serviceWorker.controller) {
+            console.log('[PWA Builder] active service worker found, no need to register')
+        } else {
+
+            //Register the ServiceWorker
+            navigator.serviceWorker.register('pwabuilder-sw.js', {
+                scope: './'
+            }).then(function(reg) {
+                console.log('Service worker has been registered for scope:'+ reg.scope);
+            });
+        }
+    
+    </script>
+
+    <!--Bootstrap css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <!--Font Awesome css-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <!--Animatedheadline css-->
+    <link rel="stylesheet" href="assets/css/jquery.animatedheadline.css">
+    <!--Magnific css-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--Owl-Carousel css-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!--Site Main Style css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--Responsive css-->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!--Manifest.json-->
+    <link rel="manifest" href="manifest.json" />
+
+    <style>#color-animation-bg{position:absolute;background-color:black;height:100vh}</style>
+</head>
+
+<body>
+
+
+    <!-- Preloader Start -->
+    <div id="preloader">
+        <div class="spinner">
+            <div class="spin1"></div>
+            <div class="spin2"></div>
+            <div class="spin3"></div>
+            <div class="spin4"></div>
+            <div class="spin5"></div>
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container"> <a class="navbar-brand logo" href="index.html"> A Smokin' Place </a> <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+            <div class="navbar-collapse collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"> <a href="#" class="nav-link active" data-scroll-nav="0" data-toggle="collapse" data-target=".navbar-collapse.show">Home</a></li>
+                    <li class="nav-item"> <a href="#" class="nav-link" data-scroll-nav="2" data-toggle="collapse" data-target=".navbar-collapse.show">Products</a></li>
+                    <li class="nav-item"> <a href="#" class="nav-link" data-scroll-nav="1" data-toggle="collapse" data-target=".navbar-collapse.show">About Us</a></li>
+                    <li class="nav-item"> <a href="#" class="nav-link" data-scroll-nav="3" data-toggle="collapse" data-target=".navbar-collapse.show">A Smokin' Deck</a></li>
+                    <li class="nav-item"> <a href="#" class="nav-link" data-scroll-nav="4" data-toggle="collapse" data-target=".navbar-collapse.show">testimonial</a></li>
+                    <li class="nav-item"> <a href="#" class="nav-link" data-scroll-nav="5" data-toggle="collapse" data-target=".navbar-collapse.show">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Navbar End-->
+
+    <!--Home Section Start-->
+    <section id="home" class="banner" data-scroll-index="0">
+        <!--  *** *** 
+            the canvas element that the color-animation animations will be drawn to 
+          -->
+        <canvas id="color-animation-bg"></canvas>
+        <div class="banner-area">
+            <div class="banner-caption container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 content-home">
+                            <div class="banner-welcome">
+                                <img src="assets/img/logo.png" width="450px" alt="A Smokin' Place" />
+                                <div class="caption-inner">
+                                    <div class="ah-headline">
+                                        <br>
+                                        <br>
+                                        <span class="typed-static">Your One Stop</span>
+                                        <span class="ah-words-wrapper">
+                                            <b class="is-visible"> Smoke Shop.</b>
+                                            <b> Vape Shop.</b>
+                                            <b> CBD Shop.</b>
+                                            <b> Cigar Shop.</b>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" data-scroll-nav="1" class="mouse-icon hidden-sm"><span class="wheel"></span></a>
+            </div>
+        </div>
+    </section>
+    <!--Home Section End-->
+
+    <section class="fabon-work-area section_t_100 section_b_70" data-scroll-index="2">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="site-heading"> <br> <br>
+                    <h2>Our Products</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="portfolio-filter text-center">
+                        <ul>
+                            <li class="current" data-filter="*">All</li>
+                            <li data-filter=".cbd">CBD</li>
+                            <li data-filter=".vapes">Vape Life</li>
+                            <li data-filter=".glasswear">Glasswear</li>
+                            <li data-filter=".hookah">Hookahs</li>
+                            <li data-filter=".cigars">Cigars</li>
+                            <li data-filter=".wraps">Roll Your Own</li>
+                            <li data-filter=".incense">Incense</li>
+                            <li data-filter=".accessories">Accessories</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>   
+            <div class="row portfolio-items">
+                <div class="col-lg-4 col-md-6 item incense">
+                    <div class="item-content"> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="assets/img/work-1.png">
+                        <div class="item-img-overlay">
+                            <div class="overlay-info v-middle text-center"></div>
+                            <div class="cap">
+                                <h6>Incense</h6>
+                                <div class="icons"> <span class="zoom-img"> <a href="assets/img/work-1.png"> <i class="fa fa-search"></i> </a> </span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 item vapes">
+                    <div class="item-content"> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="assets/img/work-2.png">
+                        <div class="item-img-overlay">
+                            <div class="overlay-info v-middle text-center"></div>
+                            <div class="cap">
+                                <h6>Vape Life</h6>
+                                <div class="icons"> <span class="zoom-img"> <a href="assets/img/work-2.png"> <i class="fa fa-search"></i> </a> </span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 item wraps cigars">
+                    <div class="item-content"> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="assets/img/work-3.png">
+                        <div class="item-img-overlay">
+                            <div class="overlay-info v-middle text-center"></div>
+                            <div class="cap">
+                                <h6>Roll Your Own</h6>
+                                <div class="icons"> <span class="zoom-img"> <a href="assets/img/work-3.png"> <i class="fa fa-search"></i> </a> </span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 item accessories">
+                    <div class="item-content"> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="assets/img/work-4.png">
+                        <div class="item-img-overlay">
+                            <div class="overlay-info v-middle text-center"></div>
+                            <div class="cap">
+                                <h6>Accessories</h6>
+                                <div class="icons"> <span class="zoom-img"> <a href="assets/img/work-4.png"> <i class="fa fa-search"></i> </a> </span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 item accessories">
+                    <div class="item-content"> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="assets/img/work-5.png">
+                        <div class="item-img-overlay">
+                            <div class="overlay-info v-middle text-center"></div>
+                            <div class="cap">
+                                <h6>Accessories</h6>
+                                <div class="icons"> <span class="zoom-img"> <a href="assets/img/work-5.png"> <i class="fa fa-search"></i> </a> </span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 item deals hookah">
+                    <div class="item-content"> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="assets/img/work-6.png">
+                        <div class="item-img-overlay">
+                            <div class="overlay-info v-middle text-center"></div>
+                            <div class="cap">
+                                <h6>Hookah</h6>
+                                <div class="icons"> <span class="zoom-img"> <a href="assets/img/work-6.png"> <i class="fa fa-search"></i> </a> </span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 item glasswear">
+                    <div class="item-content"> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="assets/img/work-7.png">
+                        <div class="item-img-overlay">
+                            <div class="overlay-info v-middle text-center"></div>
+                            <div class="cap">
+                                <h6>Glasswear</h6>
+                                <div class="icons"> <span class="zoom-img"> <a href="assets/img/work-7.png"> <i class="fa fa-search"></i> </a> </span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 item vapes">
+                    <div class="item-content"> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="assets/img/work-8.png">
+                        <div class="item-img-overlay">
+                            <div class="overlay-info v-middle text-center"></div>
+                            <div class="cap">
+                                <h6>Vape Life</h6>
+                                <div class="icons"> <span class="zoom-img"> <a href="assets/img/work-8.png"> <i class="fa fa-search"></i> </a> </span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 item accessories incense">
+                    <div class="item-content"> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="assets/img/work-9.png">
+                        <div class="item-img-overlay">
+                            <div class="overlay-info v-middle text-center"></div>
+                            <div class="cap">
+                                <h6>Incense</h6>
+                                <div class="icons"> <span class="zoom-img"> <a href="assets/img/work-9.png"> <i class="fa fa-search"></i> </a> </span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 item hookah">
+                    <div class="item-content"> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="assets/img/work-10.png">
+                        <div class="item-img-overlay">
+                            <div class="overlay-info v-middle text-center"></div>
+                            <div class="cap">
+                                <h6>Hookah</h6>
+                                <div class="icons"> <span class="zoom-img"> <a href="assets/img/work-10.png"> <i class="fa fa-search"></i> </a> </span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 item glasswear">
+                    <div class="item-content"> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="assets/img/work-11.png">
+                        <div class="item-img-overlay">
+                            <div class="overlay-info v-middle text-center"></div>
+                            <div class="cap">
+                                <h6>Glasswear</h6>
+                                <div class="icons"> <span class="zoom-img"> <a href="assets/img/work-11.png"> <i class="fa fa-search"></i> </a> </span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 item glasswear">
+                    <div class="item-content"> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="assets/img/work-12.png">
+                        <div class="item-img-overlay">
+                            <div class="overlay-info v-middle text-center"></div>
+                            <div class="cap">
+                                <h6>Glasswear</h6>
+                                <div class="icons"> <span class="zoom-img"> <a href="assets/img/work-12.png"> <i class="fa fa-search"></i> </a> </span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 item vapes">
+                    <div class="item-content"> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="assets/img/work-13.png">
+                        <div class="item-img-overlay">
+                            <div class="overlay-info v-middle text-center"></div>
+                            <div class="cap">
+                                <h6>Vape Life</h6>
+                                <div class="icons"> <span class="zoom-img"> <a href="assets/img/work-13.png"> <i class="fa fa-search"></i> </a> </span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 item wraps">
+                    <div class="item-content"> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="assets/img/work-14.png">
+                        <div class="item-img-overlay">
+                            <div class="overlay-info v-middle text-center"></div>
+                            <div class="cap">
+                                <h6>Roll Your Own</h6>
+                                <div class="icons"> <span class="zoom-img"> <a href="assets/img/work-14.png"> <i class="fa fa-search"></i> </a> </span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 item vapes">
+                    <div class="item-content"> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="assets/img/work-15.png">
+                        <div class="item-img-overlay">
+                            <div class="overlay-info v-middle text-center"></div>
+                            <div class="cap">
+                                <h6>Vape Life</h6>
+                                <div class="icons"> <span class="zoom-img"> <a href="assets/img/work-15.png"> <i class="fa fa-search"></i> </a> </span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 item vapes">
+                    <div class="item-content"> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="assets/img/work-16.png">
+                        <div class="item-img-overlay">
+                            <div class="overlay-info v-middle text-center"></div>
+                            <div class="cap">
+                                <h6>Vape Life</h6>
+                                <div class="icons"> <span class="zoom-img"> <a href="assets/img/work-16.png"> <i class="fa fa-search"></i> </a> </span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 item cbd">
+                    <div class="item-content"> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="assets/img/work-17.png">
+                        <div class="item-img-overlay">
+                            <div class="overlay-info v-middle text-center"></div>
+                            <div class="cap">
+                                <h6>CBD</h6>
+                                <div class="icons"> <span class="zoom-img"> <a href="assets/img/work-17.png"> <i class="fa fa-search"></i> </a> </span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 item vapes">
+                    <div class="item-content"> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="assets/img/work-18.png">
+                        <div class="item-img-overlay">
+                            <div class="overlay-info v-middle text-center"></div>
+                            <div class="cap">
+                                <h6>Vape Life</h6>
+                                <div class="icons"> <span class="zoom-img"> <a href="assets/img/work-18.png"> <i class="fa fa-search"></i> </a> </span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 item incense">
+                    <div class="item-content"> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="assets/img/work-19.png">
+                        <div class="item-img-overlay">
+                            <div class="overlay-info v-middle text-center"></div>
+                            <div class="cap">
+                                <h6>Incense</h6>
+                                <div class="icons"> <span class="zoom-img"> <a href="assets/img/work-19.png"> <i class="fa fa-search"></i> </a> </span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 item hookah">
+                    <div class="item-content"> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="assets/img/work-20.png">
+                        <div class="item-img-overlay">
+                            <div class="overlay-info v-middle text-center"></div>
+                            <div class="cap">
+                                <h6>Hookah</h6>
+                                <div class="icons"> <span class="zoom-img"> <a href="assets/img/work-20.png"> <i class="fa fa-search"></i> </a> </span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 item glassware">
+                    <div class="item-content"> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="assets/img/work-21.png">
+                        <div class="item-img-overlay">
+                            <div class="overlay-info v-middle text-center"></div>
+                            <div class="cap">
+                                <h6>Glasswear</h6>
+                                <div class="icons"> <span class="zoom-img"> <a href="assets/img/work-21.png"> <i class="fa fa-search"></i> </a> </span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fabon-service-area section_t_100 section_b_70" data-scroll-index="1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="site-heading-2">
+                        <h2>Who We Are</h2>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <p class="double-space">Established in 2012, we opened our doors with a simple concept in mind: to provide Statesboro with a classy and fun smoke shop that offers a wide variety of smoking products that are backed up by the best priced we can offer, supported by outstanding customer service, and a friendly environment that is welcoming to everyone (over the age of 18, of course).</p>
+                    </div> <br> <br>
+                    <div class="d-flex justify-spaced-between">
+                        <p class="double-space">We carry a wide variety of products including hand pipes, glass water pipes, vaporizers, e-cigarettes and juices, incense, tapestries, roll-your-own papers, flavored cigar wraps, pipe tobacco, detox, smoking accessories, fun novelty items, and more. We have recently added in a cigar humidor and an expanding selection of premium cigars.</p>
+                    </div> <br> <br>
+                    <div class="d-flex justify-content-center">
+                        <p class="double-space">We offer monthly and weekly deals that can't be beat! Aside from our already competitive pricing that customer's love, we always have featured specials with free products just for shopping with us. Another crowd pleaser is our raffels, where one lucky winner walks away with a sophisticated water pipe with known brand names such as RooR and Medicali. Our hot deals and cool products are sure to keep you coming back for more!</p>
+                    </div> <br> <br>
+                    <div class="d-flex justify-content-center">
+                        <p class="double-space">While we aim to offer everything you need to enjoy your next smoking session, we get our ideas for new products and speciality items from suggestions made by our loyal, growing customer base and industry trade shows that we attend annually. We are constantly updating our invetory and product lines to keep custombers coming back for more. Stop by today and sign up for our Customer Loyalty Program and always receive the VIP treatment at A Smokin' Place.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fabon-hire-area section_100" data-scroll-index="3">
+        <div id="deck">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="hire-box"> <br>
+                            <h1>A Smokin' Deck</h1> <br>
+                            <h2>Enjoy a Hookah Session Any Day or Night!</h2> <br>
+                            <h1>Open</h1><br>
+                            <h2>Monday - Saturday<br>2 pm - 9 pm<br><br>Sunday<br>2 pm - 6 pm</h2> <br> <br>
+                            <h2>We offer a wide selection of flavors &amp; the opportunity to <br>create your own flavorful mix.<br> <br>Always affordable prices &amp; we don't charge per-person!</h2><br>
+                            <h3>Extra Coals are FREE.</h3><br>
+                            <h2>Our deck is very pet friendly &amp; welcomes all fur babies!</h2><br>
+                            <h3>(Leashes appreciated)</h3><br>
+                            <h2>Everyone on the deck must be 18+</h2><br>
+                            <h3>NO Exceptions.</h3> <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bites">
+            <h1>Dinner and a Hookah?</h1><br>
+            <h3>Stop by Bites On Brampton for a fresh &amp; delicious meal to enjoy with your hookah only 2 doors down!</h3><br> <a href="https://www.candlertakeout.com/r/56/restaurants/delivery/Bites-Casual-Dining-Statesboro" target="_blank">Order Now!</a>
+        </div>
+    </section>
+    <section class="fabon-testimonial-area section_100" data-scroll-index="4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="site-heading-2">
+                        <h2>Testimonials</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="owl-carousel">
+                        <div class="single-testimonial"> <br>
+                            <p class="vibrant">The staff is amazing!! They are always a huge help and have a great selection of vape juice and so much more.</p>
+                            <div class="testimonial-info">
+                                <h4>Melva Rodriguez</h4>
+                                <p>Google Review</p>
+                            </div>
+                        </div>
+                        <div class="single-testimonial"> <br>
+                            <p class="vibrant">Super friendly staff. Extremely knowledgeable about all the vapes. # 1 smoke shop in the Boro.</p>
+                            <div class="testimonial-info">
+                                <h4>David Tootle</h4>
+                                <p>Google Review</p>
+                            </div>
+                        </div>
+                        <div class="single-testimonial"> <br>
+                            <p class="vibrant">It's so clean and organized. The quality is so much better than the other any other store around.</p>
+                            <div class="testimonial-info">
+                                <h4>Potato John</h4>
+                                <p>Google Review</p>
+                            </div>
+                        </div>
+                        <div class="single-testimonial"> <br>
+                            <p class="vibrant">Got Great Prices! A lot of great flavors! Bought 3 vapes and dozens of bottle of juices!</p>
+                            <div class="testimonial-info">
+                                <h4>Gina Gay</h4>
+                                <p>Google Review</p>
+                            </div>
+                        </div>
+                        <div class="single-testimonial"> <br>
+                            <p class="vibrant">Always great service when I go in there. Everyone is super friendly. Love it!.</p>
+                            <div class="testimonial-info">
+                                <h4>Amanda Critzer</h4>
+                                <p>Google Review</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fabon-contact-area section_100" data-scroll-index="5">
+        <div class="fabon-contact-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="site-heading">
+                            <h2>Contact Us</h2>
+                        </div>
+                        <div class="fb-area">
+                            <div class="col-md-10 offset-md-1">
+                                <p>Message us on Facebook for the quickest response!</p> <br> <a href="https://www.facebook.com/ASmokinPlace/?rf=454439374586747" class="fb-msg-btn" target="_blank">Message us on Facebook</a>
+                            </div>
+                        </div> <br> <br> <br>
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1">
+                                <p>No Facebook Account? Just fill out the form below:</p><br><br>
+                                <div class="contact_form">
+                                    <div id="note"></div>
+                                    <div id="fields"></div>
+                                    <form id="ajax-contact-form">
+                                        <p class="form_info">name <span class="required">*</span></p> <input class="col-xs-12 col-sm-12 col-md-8" type="text" name="name" value="" />
+                                        <p class="form_info">email <span class="required">*</span></p> <input class="col-xs-12 col-sm-12 col-md-8" type="text" name="email" value="" />
+                                        <p class="form_info">subject</p> <input class="col-xs-12 col-sm-12 col-md-8" type="text" name="subject" value="" /><br>
+                                        <p class="form_info">message</p><textarea name="message" id="message" class="col-xs-12 col-sm-12 col-md-12"></textarea>
+                                        <div class="clear"></div><input type="submit" class="btn btn-primary btn-form marg-right5" value="Submit" /> <input type="reset" class="btn btn-primary btn-form" value="Reset" />
+                                        <div class="clear pad45"></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="fabon-footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"> <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="assets/img/logo2.png"> <br>
+                    <p>Your One Stop Smoke Stop.<br>Happily serving Statesboro since 2012.<p> <br> <br>
+                            <p>1200 Brampton Ave.<br>Statesboro, GA 30458<br>(912)225-3003<p> <br>
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/pages/A-Smokin-Place/454439374586747" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com/asmokinplace?lang=en" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://www.instagram.com/asmokinplace/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Jquery js-->
+    <script src="assets/js/jquery-3.0.0.min.js"></script>
+    <!--Bootstrap js-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!--ScrollIt js-->
+    <script src="assets/js/scrollIt.min.js"></script>
+    <!--Owl-Carousel js-->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!--Ripples js-->
+    <script src="assets/js/jquery.ripples-min.js"></script>
+    <!--Barfiller js-->
+    <script src="assets/js/jquery.barfiller.js"></script>
+    <!--Animatedheadline js-->
+    <script src="assets/js/jquery.animatedheadline.min.js"></script>
+    <!-- Isotop Js -->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/custom-isotop.js"></script>
+    <!--Magnific js-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--Init js-->
+    <script src="assets/js/init.js"></script>
+
+    <!-- ***  ***
+          include the javascript files for the color-animation
+          we need to include the dependency files first, then
+          finally the index.js file -- since the index.js file
+          uses the code in the other two files, they must be
+          loaded first.
+      -->
+    <script src="assets/js/color-animation/utils.js"></script>
+    <script src="assets/js/color-animation/Ball.js"></script>
+    <script src="assets/js/color-animation/loader.js"></script>
+    <script>
+        function init() {
+            var imgDefer = document.getElementsByTagName('img');
+            for (var i = 0; i < imgDefer.length; i++) {
+                if (imgDefer[i].getAttribute('data-src')) {
+                    imgDefer[i].setAttribute('src', imgDefer[i].getAttribute('data-src'));
+                }
+            }
+        }
+        window.onload = init;
+    </script>
+    <!--Main js-->
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#ajax-contact-form").submit(function() {
+                var str = $(this).serialize();
+                $.ajax({
+                    type: "POST",
+                    url: "contact_form/contact_process.php",
+                    data: str,
+                    success: function(msg) {
+                        if (msg == 'OK') {
+                            result = '<div class="notification_ok">Your message has been sent. Thank you!</div>';
+                            $("#fields").hide();
+                        } else {
+                            result = msg;
+                        }
+                        $('#note').html(result);
+                    }
+                });
+                return false;
+            });
+        });
+
+    </script>
+</body>
+
+</html>
