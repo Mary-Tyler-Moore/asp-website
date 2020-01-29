@@ -16,7 +16,7 @@ Refresh the page to see a different html canvas animation
 
 > You can see my other tech stacks [here](https://stackshare.io/Mary-Tyler-Moore)
 
-<img src="https://github.com/Mary-Tyler-Moore/asp-website/blob/master/assets/img/asp-stack.png?raw=true" width="1000"
+<img src="https://github.com/Mary-Tyler-Moore/asp-website/blob/master/assets/img/asp-stack.png?raw=true" width="1000" />
 
 <br />
 
