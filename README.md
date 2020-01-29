@@ -4,11 +4,19 @@
 
 <br />
 
-# asp-website
+# asp-website:
 
 Refresh the page to see a different html canvas animation 
 
 <img src="https://raw.githubusercontent.com/Mary-Tyler-Moore/asp-website/master/assets/asp-animation.gif" width="1000" />
+
+<br />
+
+## Tech Stack:
+
+> You can see my other tech stacks [here](https://stackshare.io/Mary-Tyler-Moore)
+
+<img src="https://github.com/Mary-Tyler-Moore/asp-website/blob/master/assets/img/asp-stack.png?raw=true" width="1000"
 
 <br />
 
